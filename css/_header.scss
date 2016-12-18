@@ -1,0 +1,95 @@
+header {
+
+    .navbar-brand img {
+        top: 0px;
+        padding: 10px 0 0 0;
+        position: absolute;
+        width: 50px;		
+    }
+    
+    .navbar {
+        border: 1px solid transparent;
+        min-height: 50px;
+        height: 70px;
+        position: fixed;
+        width: 100%;
+    }
+    .navbar-default {
+        z-index: 40;
+    }
+    .navbar-brand img {
+        top: 0px;
+        padding: 10px 0 0 0;
+        position: absolute;
+        width: 50px;	
+    }
+
+    .header {
+        border-color: transparent;
+		background-color: rgb(41, 49, 43);
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: transparent;
+        margin: 50px 0 0;
+        background-color: #29312b;
+        position: relative;
+        top: -35px;
+        width: 100%;
+    }
+
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: #FFF;
+	}
+    .header-menu {
+    	color: #ffffff!important;
+        font-size: 1.8em;
+    }
+}
+
+
+
+/* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
+@media only screen and (min-width: 768px) {
+
+	header {
+        .navbar-brand img {
+        	margin-left: 30px;
+			padding: 5px 0 0 0;
+        	width: 50px;			
+        }
+
+        .navbar-default .navbar-collapse,
+        .navbar-default .navbar-form {
+        	background-color: transparent;
+			margin: 0;
+            top: 0;
+		}
+		.header {
+			background-color: rgba(0, 0, 0, 0.6);
+			transition: all 0.5s ease-in-out;
+
+		}
+
+        .header.active {
+		    background-color: #222222 !important;
+		    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+		    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+		    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+            height: 40px;
+		}
+
+        .navbar-right {
+            float: right !important;
+            margin-right: 0;
+        }
+
+    }
+    
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+}
