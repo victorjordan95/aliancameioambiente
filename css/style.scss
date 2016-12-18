@@ -74,8 +74,9 @@ hr {
 }
 
 .activity-jobs {
-    background-image: url('../img/fundo.jpg');    
+    background-image: url('../img/fundo2.png');    
     border-top: solid 4px $dark-green;
+    border-bottom: solid 4px $dark-green;
     h2 {
         color : #ffffff;
     }
@@ -107,6 +108,7 @@ hr {
 }
 
 .mission{
+    border-bottom: solid 4px #27ae60;
     .img-logo{
         img { 
             width: 200px;
@@ -181,6 +183,45 @@ footer {
 			color: #848484;
 		}
 	}
+}
+
+
+.contador-background{
+    background-image: url('../img/fundo-contador.png');
+    height: 650px;
+    width: 100%;
+    .message-sent {
+        color: #ffffff;
+        background: rgba(39, 174, 96, 0.3);
+        border-top: solid rgba(46, 204, 113, 0.3) 5px;
+        border-bottom: solid rgba(46, 204, 113, 0.3) 5px;
+        padding: 30px;
+    }
+}
+
+.message-sent{
+	color: #ffffff;
+	background: $dark-green; 
+	margin-top:10%;
+	border-top: solid $main-green 5px;
+	border-bottom: solid $main-green 5px;
+	padding: 30px;
+	i {
+		font-size: 100px;
+	} 
+	.message-success{
+		font-size: 20px;
+	}
+	a {
+		font-weight: bolder;
+		background-color: $main-green;
+		border-color: $main-green;
+		&:hover {
+			background-color: $title-green;
+			border-color: $title-green;
+		}
+	}
+
 }
 
 /* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */

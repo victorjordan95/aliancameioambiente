@@ -11,14 +11,11 @@ header .navbar {
   width: 100%; }
 header .navbar-default {
   z-index: 40; }
-header .navbar-brand img {
-  top: 0px;
-  padding: 10px 0 0 0;
-  position: absolute;
-  width: 50px; }
 header .header {
   border-color: transparent;
   background-color: #29312b; }
+header .navbar-default .navbar-nav > li > a {
+  color: #ffffff; }
 header .navbar-default .navbar-collapse,
 header .navbar-default .navbar-form {
   border-color: transparent;
@@ -30,7 +27,7 @@ header .navbar-default .navbar-form {
 header .navbar-default .navbar-toggle .icon-bar {
   background-color: #FFF; }
 header .header-menu {
-  color: #ffffff !important;
+  color: #ffffff;
   font-size: 1.8em; }
 
 /* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
@@ -55,7 +52,18 @@ header .header-menu {
     height: 40px; }
   header .navbar-right {
     float: right !important;
-    margin-right: 0; } }
+    margin-right: 0; }
+  header .navbar-default .navbar-nav > li > a:hover {
+    color: #2ecc71; }
+  header .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 20px 5px;
+    font-size: 18px; } }
+@media only screen and (min-width: 1100px) {
+  .nav > li > a {
+    font-size: 22px !important;
+    padding: 20px 15px !important; } }
 .hide-bullets {
   list-style: none;
   margin-left: -40px;
@@ -164,8 +172,9 @@ hr {
     position: relative; }
 
 .activity-jobs {
-  background-image: url("../img/fundo.jpg");
-  border-top: solid 4px #27ae60; }
+  background-image: url("../img/fundo2.png");
+  border-top: solid 4px #27ae60;
+  border-bottom: solid 4px #27ae60; }
   .activity-jobs h2 {
     color: #ffffff; }
   .activity-jobs .img-jobs img {
@@ -185,13 +194,15 @@ hr {
   transform: translateX(-50%);
   width: 150px; }
 
-.mission .img-logo img {
-  width: 200px; }
-.mission .description h3 {
-  color: #ffffff;
-  font-weight: bolder; }
-.mission .description p {
-  color: #ffffff; }
+.mission {
+  border-bottom: solid 4px #27ae60; }
+  .mission .img-logo img {
+    width: 200px; }
+  .mission .description h3 {
+    color: #ffffff;
+    font-weight: bolder; }
+  .mission .description p {
+    color: #ffffff; }
 
 .security img {
   border: 3px solid #9fcfb8;
@@ -234,6 +245,36 @@ footer {
     color: #A2A2A2; }
     footer a:hover {
       color: #848484; }
+
+.contador-background {
+  background-image: url("../img/fundo-contador.png");
+  height: 650px;
+  width: 100%; }
+  .contador-background .message-sent {
+    color: #ffffff;
+    background: rgba(39, 174, 96, 0.3);
+    border-top: solid rgba(46, 204, 113, 0.3) 5px;
+    border-bottom: solid rgba(46, 204, 113, 0.3) 5px;
+    padding: 30px; }
+
+.message-sent {
+  color: #ffffff;
+  background: #27ae60;
+  margin-top: 10%;
+  border-top: solid #2ecc71 5px;
+  border-bottom: solid #2ecc71 5px;
+  padding: 30px; }
+  .message-sent i {
+    font-size: 100px; }
+  .message-sent .message-success {
+    font-size: 20px; }
+  .message-sent a {
+    font-weight: bolder;
+    background-color: #2ecc71;
+    border-color: #2ecc71; }
+    .message-sent a:hover {
+      background-color: #289916;
+      border-color: #289916; }
 
 /* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
 @media only screen and (min-width: 768px) {
